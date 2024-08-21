@@ -45,7 +45,7 @@ class LinkList:
         new_node.next = curr_node.next
         curr_node.next = new_node
 
-    def check_linked_list(self):
+    def visualize(self):
         size = 0
         data_list = []
 
@@ -65,8 +65,8 @@ llist.insertAtHead(1)
 llist.insertAtHead(2)
 llist.insertAtTail(7)
 llist.insertAtTail(5)
-llist.check_linked_list()
+llist.visualize()
 
 llist.insertAtIndex(11, 2)
 llist.insertAtIndex(13, 3)
-llist.check_linked_list()
+llist.visualize()

@@ -23,14 +23,14 @@ class TreeNode:
             else:
                 self.right.insert(data)
 
-    def check(self) -> None:
+    def visualize(self) -> None:
         if self.left:
-            self.left.check()
+            self.left.visualize()
 
         print(self.data)
 
         if self.right:
-            self.right.check()
+            self.right.visualize()
 
     def in_order_traversal(self, root):
         iter: list = []
@@ -65,6 +65,7 @@ def main():
     root.insert(19)
     root.insert(31)
     root.insert(42)
+    root.visualize()
     print(root.in_order_traversal(root))
     print(root.pre_order_tranversal(root))
     print(root.post_order_tranversal(root))
